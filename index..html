@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aïssatou × Celia × Soraya ♡</title>
+
+<style>
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #fff7fb;
+color: #4b3542;
+}
+
+/* INTRO */
+
+.intro {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 30px;
+background: linear-gradient(135deg, #fff1f7, #fce4ef);
+}
+
+.intro p {
+font-size: 14px;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 25px;
+}
+
+.intro h1 {
+font-family: Georgia, serif;
+font-size: 55px;
+line-height: 1.1;
+max-width: 800px;
+margin-bottom: 20px;
+}
+
+.subtitle {
+font-size: 20px;
+margin-bottom: 35px;
+}
+
+.button {
+display: inline-block;
+padding: 16px 30px;
+background: #4b3542;
+color: white;
+text-decoration: none;
+border-radius: 50px;
+font-size: 16px;
+transition: 0.3s;
+}
+
+.button:hover {
+transform: scale(1.05);
+}
+
+/* HERO */
+
+.hero {
+min-height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+background:
+linear-gradient(
+rgba(70, 40, 55, 0.4),
+rgba(70, 40, 55, 0.4)
+),
+url("photos/01.jpg") center/cover;
+
+color: white;
+}
+
+.hero-content {
+max-width: 900px;
+padding: 30px;
+}
+
+.hero h2 {
+font-family: Georgia, serif;
+font-size: 70px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 22px;
+line-height: 1.6;
+}
+
+/* SECTIONS */
+
+section {
+padding: 90px 8%;
+}
+
+.story {
+background: #fff7fb;
+text-align: center;
+}
+
+.story h2,
+.gallery h2,
+.videos h2,
+.letter h2 {
+font-family: Georgia, serif;
+font-size: 48px;
+margin-bottom: 25px;
+}
+
+.story-intro {
+max-width: 700px;
+margin: auto;
+font-size: 19px;
+line-height: 1.8;
+}
+
+/* SOUVENIRS */
+
+.memory {
+max-width: 900px;
+margin: 60px auto;
+text-align: left;
+padding: 30px;
+background: white;
+border-radius: 25px;
+box-shadow: 0 10px 30px rgba(100, 50, 80, 0.08);
+}
+
+.memory h3 {
+font-family: Georgia, serif;
+font-size: 28px;
+margin-bottom: 12px;
+}
+
+.memory p {
+line-height: 1.7;
+font-size: 17px;
+}
+
+/* GALERIE */
+
+.gallery {
+background: #fceaf2;
+text-align: center;
+}
+
+.gallery-intro {
+margin-bottom: 40px;
+font-size: 18px;
+}
+
+.photo-grid {
+max-width: 1100px;
+margin: auto;
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 20px;
+}
+
+.photo-grid img {
+width: 100%;
+height: 330px;
+
+object-fit: cover;
+
+border-radius: 20px;
+
+cursor: pointer;
+
+box-shadow:
+0 10px 25px rgba(80, 40, 60, 0.12);
+
+transition: 0.3s;
+}
+
+.photo-grid img:hover {
+transform: scale(1.03);
+}
+
+/* VIDEOS */
+
+.videos {
+background: #fff;
+text-align: center;
+}
+
+.video-intro {
+margin-bottom: 45px;
+font-size: 18px;
+}
+
+.video-grid {
+max-width: 1100px;
+margin: auto;
+
+display: grid;
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 30px;
+}
+
+.video-card {
+background: #fff7fb;
+
+padding: 15px;
+
+border-radius: 25px;
+
+box-shadow:
+0 10px 30px rgba(100, 50, 80, 0.08);
+}
+
+.video-card video {
+width: 100%;
+border-radius: 18px;
+}
+
+.video-card p {
+padding: 15px 5px 5px;
+font-style: italic;
+}
+
+/* LETTRES */
+
+.letter {
+background: #fff;
+text-align: center;
+}
+
+.letter-box {
+max-width: 750px;
+
+margin: auto;
+
+padding: 45px;
+
+background: #fff7fb;
+
+border-radius: 30px;
+
+text-align: left;
+
+line-height: 1.9;
+
+font-size: 18px;
+}
+
+.letter-soraya {
+margin-top: 80px;
+}
+
+/* FOOTER */
+
+footer {
+padding: 70px 20px;
+
+background: #4b3542;
+
+color: white;
+
+text-align: center;
+}
+
+footer h2 {
+font-family: Georgia, serif;
+
+font-size: 40px;
+
+margin-bottom: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+.intro h1 {
+font-size: 38px;
+}
+
+.hero h2 {
+font-size: 45px;
+}
+
+.hero p {
+font-size: 18px;
+}
+
+.story h2,
+.gallery h2,
+.videos h2,
+.letter h2 {
+font-size: 36px;
+}
+
+section {
+padding: 60px 6%;
+}
+
+.photo-grid {
+grid-template-columns: repeat(2, 1fr);
+
+gap: 12px;
+}
+
+.photo-grid img {
+height: 220px;
+}
+
+.video-grid {
+grid-template-columns: 1fr;
+}
+
+.letter-box {
+padding: 25px;
+}
+
+}
+/* 🎀 CADRES COLORÉS — SANS MODIFIER LES PHOTOS 🎀 */
+
+.photo-card:nth-child(1) {
+outline: 7px solid #f8d7e2;
+}
+
+.photo-card:nth-child(2) {
+outline: 7px solid #e8d9f2;
+}
+
+.photo-card:nth-child(3) {
+outline: 7px solid #f9e5b8;
+}
+
+.photo-card:nth-child(4) {
+outline: 7px solid #dcecf0;
+}
+
+.photo-card:nth-child(5) {
+outline: 7px solid #f3d4df;
+}
+
+.photo-card:nth-child(6) {
+outline: 7px solid #e4d9ef;
+}
+
+.photo-card:nth-child(7) {
+outline: 7px solid #f7e1c8;
+}
+
+.photo-card:nth-child(8) {
+outline: 7px solid #dce8f4;
+}
+
+.photo-card:nth-child(9) {
+outline: 7px solid #f4dce8;
+}
+
+.photo-card:nth-child(10) {
+outline: 7px solid #eadcf0;
+}
+/* 🎀 COZY GIRLIE 🎀 */
+
+.cute-decoration {
+position: fixed;
+pointer-events: none;
+z-index: 5;
+user-select: none;
+animation: floatCute 4s ease-in-out infinite;
+}
+
+.cute-bow {
+font-size: 30px;
+}
+
+.cute-star {
+font-size: 22px;
+animation: sparkle 2s ease-in-out infinite;
+}
+
+.cute-flower {
+font-size: 24px;
+animation: floatCute 5s ease-in-out infinite;
+}
+
+@keyframes floatCute {
+0%, 100% {
+transform: translateY(0) rotate(-4deg);
+}
+
+50% {
+transform: translateY(-12px) rotate(4deg);
+}
+}
+
+@keyframes sparkle {
+0%, 100% {
+opacity: .35;
+transform: scale(.8) rotate(0deg);
+}
+
+50% {
+opacity: 1;
+transform: scale(1.2) rotate(15deg);
+}
+}
+
+.section-title {
+position: relative;
+}
+
+.section-title::before {
+content: "♡";
+display: block;
+font-size: 24px;
+color: #d98da5;
+margin-bottom: 8px;
+}
+
+.section-title::after {
+content: "✦ ･ﾟ✧ ･ﾟ✦";
+display: block;
+color: #d8a0b0;
+font-size: 13px;
+letter-spacing: 5px;
+margin-top: 15px;
+}
+
+.memory,
+.dossier,
+.letter,
+.video-card {
+position: relative;
+overflow: hidden;
+}
+
+.memory::after,
+.dossier::after,
+.letter::after {
+content: "♡";
+position: absolute;
+right: 18px;
+bottom: 10px;
+color: #edc2ce;
+font-size: 28px;
+transform: rotate(10deg);
+}
+
+.photo-card {
+position: relative;
+box-shadow: 0 8px 25px rgba(120, 70, 90, .10);
+}
+
+.photo-card::after {
+content: "♡";
+position: absolute;
+right: 12px;
+bottom: 8px;
+color: white;
+font-size: 22px;
+text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.dossier-number {
+display: inline-block;
+background: #f6d6df;
+padding: 5px 10px;
+border-radius: 20px;
+}
+
+.final-content::before {
+content: "🎀 ♡ ✦ ♡ 🎀";
+display: block;
+font-size: 18px;
+margin-bottom: 25px;
+}
+.photo-caption {
+margin: 10px 0 18px;
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-size: 16px;
+color: #8d5367;
+font-style: italic;
+letter-spacing: 0.3px;
+}
+.photo-sticker {
+display: block;
+width: fit-content;
+margin: -10px auto 15px;
+font-size: 24px;
+color: #d98da5;
+transform: rotate(-8deg);
+animation: floatCute 3s ease-in-out infinite;
+}
+.photo-number {
+display: block;
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-size: 13px;
+letter-spacing: 3px;
+color: #c98ba0;
+margin-top: 12px;
+margin-bottom: -4px;
+}
+.timeline {
+max-width: 850px;
+margin: 0 auto;
+padding: 80px 20px;
+text-align: center;
+}
+
+.timeline h2 {
+font-family: 'Playfair Display', serif;
+color: #6d3f50;
+font-size: 36px;
+margin-bottom: 45px;
+}
+
+.timeline-item {
+background: #fffaf8;
+border: 1px solid #f1dce3;
+border-radius: 25px;
+padding: 22px;
+margin: 20px auto;
+max-width: 600px;
+box-shadow: 0 8px 25px rgba(120, 70, 90, .08);
+}
+.timeline-item {
+position: relative;
+}
+
+.timeline-item::before {
+content: "♡";
+position: absolute;
+left: 50%;
+top: -20px;
+transform: translateX(-50%);
+color: #d98da5;
+font-size: 20px;
+background: #fffaf8;
+padding: 0 8px;
+}
+.timeline {
+position: relative;
+}
+
+.timeline::before {
+content: "";
+position: absolute;
+left: 50%;
+top: 150px;
+bottom: 80px;
+width: 2px;
+background: #efd0da;
+transform: translateX(-50%);
+z-index: 0;
+}
+
+.timeline-item {
+position: relative;
+z-index: 1;
+}
+
+
+.timeline-item span {
+display: inline-block;
+background: #f6d6df;
+color: #7d4356;
+padding: 7px 15px;
+border-radius: 20px;
+font-family: 'Playfair Display', serif;
+font-size: 15px;
+}
+
+.timeline-item p {
+color: #654d56;
+line-height: 1.7;
+margin: 12px 0 0;
+}
+.timeline-item span {
+position: relative;
+z-index: 2;
+}
+
+.timeline-item span::after {
+content: "♡";
+position: absolute;
+left: 50%;
+bottom: -30px;
+transform: translateX(-50%);
+color: #d98da5;
+font-size: 18px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- 🎀✨🌸 COZY GIRLIE MAXIMALISTE 🌸✨🎀 -->
+
+<span class="cute-decoration cute-bow" style="top: 8%; left: 3%;">🎀</span>
+<span class="cute-decoration cute-star" style="top: 14%; left: 16%;">✦</span>
+<span class="cute-decoration cute-flower" style="top: 20%; left: 5%;">🌸</span>
+<span class="cute-decoration cute-star" style="top: 28%; left: 13%;">✧</span>
+<span class="cute-decoration cute-bow" style="top: 36%; left: 4%;">🎀</span>
+<span class="cute-decoration cute-flower" style="top: 44%; left: 15%;">🌷</span>
+<span class="cute-decoration cute-star" style="top: 53%; left: 6%;">✦</span>
+<span class="cute-decoration cute-flower" style="top: 62%; left: 12%;">🌸</span>
+<span class="cute-decoration cute-bow" style="top: 72%; left: 3%;">🎀</span>
+<span class="cute-decoration cute-star" style="top: 82%; left: 15%;">✧</span>
+<span class="cute-decoration cute-flower" style="top: 91%; left: 6%;">🌷</span>
+
+<span class="cute-decoration cute-star" style="top: 10%; right: 5%;">✧</span>
+<span class="cute-decoration cute-flower" style="top: 17%; right: 15%;">🌸</span>
+<span class="cute-decoration cute-bow" style="top: 25%; right: 3%;">🎀</span>
+<span class="cute-decoration cute-star" style="top: 33%; right: 14%;">✦</span>
+<span class="cute-decoration cute-flower" style="top: 41%; right: 5%;">🌷</span>
+<span class="cute-decoration cute-star" style="top: 49%; right: 17%;">✧</span>
+<span class="cute-decoration cute-bow" style="top: 58%; right: 4%;">🎀</span>
+<span class="cute-decoration cute-flower" style="top: 67%; right: 13%;">🌸</span>
+<span class="cute-decoration cute-star" style="top: 76%; right: 5%;">✦</span>
+<span class="cute-decoration cute-bow" style="top: 86%; right: 15%;">🎀</span>
+<span class="cute-decoration cute-flower" style="top: 94%; right: 5%;">🌷</span>
+
+<span class="cute-decoration cute-star" style="top: 18%; left: 42%;">✦</span>
+<span class="cute-decoration cute-star" style="top: 38%; right: 35%;">✧</span>
+<span class="cute-decoration cute-flower" style="top: 57%; left: 45%;">🌸</span>
+<span class="cute-decoration cute-star" style="top: 70%; right: 40%;">✦</span>
+<span class="cute-decoration cute-bow" style="top: 84%; left: 43%;">🎀</span>
+<span class="cute-decoration cute-star" style="top: 96%; right: 45%;">✧</span>
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<p>
+Une petite surprise pour toi
+</p>
+
+<h1>
+J’ai créé quelque chose pour toi… ♡
+</h1>
+
+<div class="subtitle">
+Prépare-toi à revoir quelques dossiers.
+</div>
+
+<a href="#debut" class="button">
+Entrer dans nos souvenirs ♡
+</a>
+
+</section>
+
+
+<!-- HERO -->
+
+<section class="hero" id="debut">
+
+<div class="hero-content">
+
+<h2>
+Aïssatou × Celia × Soraya
+</h2>
+
+<p>
+Plus de 13 ans de souvenirs,
+<br>
+de fous rires, de disputes et de sisterhood ♡
+</p>
+
+</div>
+
+</section>
+
+
+<!-- HISTOIRE -->
+
+<section class="story">
+
+<h2>
+Notre histoire
+</h2>
+
+<p class="story-intro">
+
+Trois filles qui ont grandi ensemble,
+des maisons juste en face,
+beaucoup trop de souvenirs
+et une quantité franchement inquiétante
+de dossiers à ressortir. 😂
+
+</p>
+
+
+<div class="memory">
+
+<h3>
+🍝 Les Espaguettis
+</h3>
+
+<p>
+
+Quand on était petites, on nous appelait les
+<strong>Espaguettis</strong>
+parce qu’on était toutes les trois
+beaucoup trop maigres.
+
+Et franchement…
+le surnom était mérité. 😂
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<h3>
+🏀 Le basket
+</h3>
+
+<p>
+
+On jouait ensemble au Stade Léopold Sédar Senghor.
+
+Et évidemment, chacune pensait être la meilleure.
+
+Les matchs finissaient parfois en débats très sérieux. 😂
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<h3>
+🎆 Chaque 31 décembre
+</h3>
+
+<p>
+
+On allumait nos pétards,
+on se souhaitait bonne année
+de maison à maison,
+puis on profitait du réveillon.
+
+Ces moments étaient vraiment trop trop bien.
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<h3>
+💃 Le confinement
+</h3>
+
+<p>
+
+Quand tout le monde était enfermé chez soi,
+nous, on avait une activité essentielle :
+
+danser. 😂
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<h3>
+👩🏾 La dame aux très très longs cheveux
+</h3>
+
+<p>
+
+On avait peur d’une femme avec des cheveux
+tellement longs qu’on ne savait même pas
+si elle était réellement folle.
+
+Et le pire ?
+
+Dès qu’on parlait de ses cheveux,
+elle nous poursuivait. 😭😂
+
+</p>
+
+</div>
+
+</section>
+<section class="timeline">
+
+<h2>Notre petite histoire ♡</h2>
+
+<div class="timeline-item">
+<span>2014</span>
+<p>Les trois espaguettis, au tout début de notre histoire. 🥹♡</p>
+</div>
+
+<div class="timeline-item">
+<span>Les années passent</span>
+<p>Des délires, des disputes, des fous rires et toujours nous trois. ♡</p>
+</div>
+
+<div class="timeline-item">
+<span>Confinement</span>
+<p>Danser, rigoler et recommencer… encore et encore. 😂🎀</p>
+</div>
+
+<div class="timeline-item">
+<span>Aujourd’hui</span>
+<p>13+ ans d’amitié, et encore tellement de souvenirs à créer. ♡</p>
+</div>
+
+</section>
+
+
+<!-- GALERIE PHOTOS -->
+
+<section class="gallery">
+
+<h2>
+Nos souvenirs 📸
+</h2>
+
+<p class="gallery-intro">
+
+10 photos, 13+ ans d’amitié
+et beaucoup trop de dossiers. ♡
+
+</p>
+
+
+<div class="photo-grid">
+
+
+<img
+src="photos/01.jpg"
+alt="Souvenir 1"
+style="padding: 8px; background: #f8d7e2;"
+onclick="openPhoto(this.src)"
+><span class="photo-number">01</span>
+<p class="photo-caption">Nos petits cœurs, depuis 2014 ♡</p>
+<span class="photo-sticker">♡</span>
+
+<img
+src="photos/02.jpg"
+alt="Souvenir 2"
+style="padding: 8px; background: #e8d9f2;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Une jolie Tabaski à trois 🌙♡</p>
+<span class="photo-sticker">♡</span>
+<img
+src="photos/03.jpg"
+alt="Souvenir 3"
+style="padding: 8px; background: #f9e5b8;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Juste nous deux, comme toujours ♡</p>
+<span class="photo-sticker">♡</span>
+
+
+<img
+src="photos/04.jpg"
+alt="Souvenir 4"
+style="padding: 8px; background: #dcecf0;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Un petit moment avec ma Cece 🎀</p>
+<span class="photo-sticker">♡</span>
+
+<img
+src="photos/05.jpg"
+alt="Souvenir 5"
+style="padding: 8px; background: #f3d4df;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Soso & son petit bébé 🐱🤍</p>
+<span class="photo-sticker">♡</span>
+
+<img
+src="photos/06.jpg"
+alt="Souvenir 6"
+style="padding: 8px; background: #e4d9ef;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Un cœur pour deux ♡</p>
+<span class="photo-sticker">♡</span>
+
+<img
+src="photos/07.jpg"
+alt="Souvenir 7"
+style="padding: 8px; background: #f7e1c8;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Une petite Soso en 2014 🥹♡</p>
+<span class="photo-sticker">♡</span>
+
+<img
+src="photos/08.jpg"
+alt="Souvenir 8"
+style="padding: 8px; background: #dce8f4;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Même en appel, toujours ensemble 🥹♡</p>
+<span class="photo-sticker">♡</span>
+
+
+<img
+src="photos/09.png"
+alt="Souvenir 9"
+style="padding: 8px; background: #f4dce8;"
+onclick="openPhoto(this.src)"
+>
+<p class="photo-caption">Moi & ma Cece, tout simplement ♡</p>
+<span class="photo-sticker">♡</span>
+
+<img
+src="photos/10.png"
+alt="Souvenir 10"
+style="padding: 8px; background: #eadcf0;"
+onclick="openPhoto(this.src)"
+>
+<span class="photo-number">10</span>
+<p class="photo-caption">Le 5 avril, notre Soso à l’honneur 🎂🎀</p>
+</div>
+
+</section>
+
+
+<!-- VIDEOS -->
+
+<section class="videos">
+
+<h2>
+Nos vidéos 🎥
+</h2>
+
+<p class="video-intro">
+
+Parce que certaines histoires sont beaucoup trop belles
+pour rester seulement en photo. ♡
+
+</p>
+
+
+<div class="video-grid">
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="./01.mp4" type="video/mp4">
+>
+
+Votre navigateur ne peut pas lire cette vidéo.
+
+</video>
+
+<p>
+Un petit morceau de nos souvenirs ♡
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="02.mp4">
+
+</video>
+
+<p>
+Encore un dossier 😂
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="03.mp4">
+
+</video>
+
+<p>
+Nous, tout simplement ♡
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="04.mp4">
+
+</video>
+
+<p>
+Les souvenirs qu’on garde précieusement.
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="05.mp4">
+
+</video>
+
+<p>
+😂
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="06.mp4">
+
+</video>
+
+<p>
+Encore nous.
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="07.mp4">
+
+</video>
+
+<p>
+Un souvenir de plus ♡
+</p>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls>
+
+<source src="08.mp4">
+
+</video>
+
+<p>
+Et encore un dossier. 😂
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- LETTRE CELIA -->
+
+<section class="letter">
+<div style="font-size: 38px; margin-bottom: 10px;">💌</div>
+<h2>
+Pour toi, Celia ♡
+</h2>
+
+<div class="letter-box">
+
+<p>
+Cece,
+</p>
+
+<br>
+
+<p>
+Plus de 13 ans… franchement, quand j’y pense, c’est énorme.
+Et pourtant, quand je repense à nous, j’ai l’impression que certaines choses étaient encore hier.
+</p>
+
+<br>
+
+<p>
+Nos maisons juste en face, nos délires, nos histoires, nos disputes pour rien, nos fous rires…
+et toutes ces petites habitudes qui ont fini par faire partie de notre quotidien.
+</p>
+
+<br>
+
+<p>
+Il y a tellement de souvenirs avec toi que je pourrais remplir un site entier rien qu’avec nos dossiers. 😂
+</p>
+
+<br>
+
+<p>
+Je pense au jour où tu as eu ton bac et où on devait enfin faire notre première sortie en boîte ensemble…
+sauf que j’avais oublié ma pièce d’identité. 😭
+Toi tu es partie et moi je suis restée chez toi à pleurer toutes les larmes de mon corps.
+Franchement, quel début de vie nocturne. 😂
+</p>
+
+<br>
+
+<p>
+Je pense aussi à ta maman qui essayait de m’aider à obtenir un peu plus de liberté avec ses fameux conseils,
+notamment les petits-déjeuners au lit pour mes parents. 😂
+</p>
+
+<br>
+
+<p>
+Et puis il y a toutes ces choses qu’on ne raconte même pas forcément,
+mais qui font que notre amitié est ce qu’elle est aujourd’hui.
+</p>
+
+<br>
+
+<p>
+Tu es une personne qui a grandi avec moi.
+Tu as connu différentes versions de moi, mes changements, mes délires,
+mes moments compliqués et toutes les petites étapes de ma vie.
+</p>
+
+<br>
+
+<p>
+Et malgré les années qui passent, il y a toujours cette complicité entre nous.
+</p>
+
+<br>
+
+<p>
+Même quand tu me dis :
+« Aïssatou arrête d’être trop jalouse » 😂.
+</p>
+
+<br>
+
+<p>
+Et évidemment, je n’oublie pas Bouba, ton cousin,
+qui a quand même eu droit à sa petite place dans tous nos délires. 😂
+</p>
+
+<br>
+
+<p>
+Je suis vraiment reconnaissante de t’avoir dans ma vie.
+</p>
+
+<br>
+
+<p>
+Je ne sais pas ce que les prochaines années nous réservent,
+mais j’espère qu’elles seront encore remplies de rires, de sorties,
+de dossiers, de conversations interminables et de souvenirs
+qu’on racontera encore dans 20 ans.
+</p>
+
+<br>
+
+<p>
+Je t’aime fort ma Cece. ♡
+</p>
+
+</div>
+
+
+<!-- LETTRE SORAYA -->
+
+<div class="letter-soraya">
+<div style="font-size: 38px; margin-bottom: 10px;">💌</div>
+s
+<h2>
+Pour toi, Soraya ♡
+</h2>
+
+<div class="letter-box">
+
+<p>
+Soso,
+</p>
+
+<br>
+
+<p>
+Je ne pouvais pas faire ce site sans toi.
+Vraiment pas.
+</p>
+
+<br>
+
+<p>
+Parce que quand je repense à toutes ces années,
+je ne vois pas seulement des souvenirs.
+Je vois nous trois.
+</p>
+
+<br>
+
+<p>
+Les espaguettis. 😂
+</p>
+
+<br>
+
+<p>
+On était petites, on ne calculait rien,
+on faisait notre vie, on rigolait pour n’importe quoi
+et on pensait sûrement que ça allait toujours être comme ça.
+</p>
+
+<br>
+
+<p>
+Et finalement, les années sont passées.
+</p>
+
+<br>
+
+<p>
+On a grandi, on a changé, chacune a commencé à avoir sa propre vie,
+mais quand je repense à cette époque,
+tu es toujours quelque part dans mes souvenirs.
+</p>
+
+<br>
+
+<p>
+Je me rappelle de nous au basket,
+de nos délires, des 31 décembre où on faisait nos pétards
+et nos « bonne année » d’une maison à l’autre,
+de nos danses, du confinement où on ne faisait pratiquement que ça 😂
+et de toutes ces histoires qu’on pourrait raconter encore aujourd’hui.
+</p>
+
+<br>
+
+<p>
+Et puis évidemment… Papi. 😂
+</p>
+
+<br>
+
+<p>
+Parce que madame, il faut quand même rappeler
+que ton cousin est officiellement mon premier amour. 😭😂
+</p>
+
+<br>
+
+<p>
+Mais au-delà de toutes nos bêtises,
+je veux surtout que tu saches que je suis reconnaissante
+d’avoir grandi avec toi.
+</p>
+
+<br>
+
+<p>
+Tu fais partie de ces personnes qui ont connu une version de moi
+que beaucoup de gens ne connaîtront jamais.
+</p>
+
+<br>
+
+<p>
+La petite Aïssatou, les espaguettis, les délires,
+les disputes, les fous rires…
+tout ça fait partie de notre histoire.
+</p>
+
+<br>
+
+<p>
+Et je trouve ça fou de me dire qu’après toutes ces années,
+on a encore des souvenirs à créer.
+</p>
+
+<br>
+
+<p>
+Alors j’espère qu’on continuera à grandir,
+à vivre nos vies, à nous retrouver,
+à rire comme des gamines quand on sera grandes,
+et surtout à garder cette petite partie de nous
+qui vient de toutes ces années.
+</p>
+
+<br>
+
+<p>
+Merci d’avoir été là dans autant de souvenirs de ma vie.
+</p>
+
+<br>
+
+<p>
+Je t’aime fort ma Soso. 🤍
+</p>
+
+<br>
+
+<p>
+Et oui… Papi restera à jamais dans les archives. 😂
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FIN -->
+<section style="text-align:center; padding:70px 20px 50px; background:#fffaf8;">
+<div style="font-size:28px; margin-bottom:15px;">🎀 ♡ 🎀</div>
+
+<p style="font-family:'Playfair Display',serif; font-size:24px; color:#6d3f50; margin:0;">
+À nous trois, aujourd’hui, demain<br>
+et pour tous les dossiers à venir. ♡
+</p>
+
+<p style="color:#a47786; margin-top:18px; font-size:14px;">
+— Aïssatou
+</p>
+</section>
+
+<footer>
+
+<h2>
+13+ ans plus tard…
+</h2>
+
+<p>
+Et ce n’est que le début. ♡
+</p>
+
+</footer>
+
+<section style="background:linear-gradient(135deg,#f6d6df,#fffaf8);text-align:center;padding:100px 20px;">
+
+<h2 style="font-family:'Playfair Display',serif;font-size:42px;color:#6d3f50;">
+Pour mes deux espaguettis ♡
+</h2>
+
+<p style="color:#8a6974;font-size:17px;margin:20px 0 30px;">
+Vous pensiez vraiment que c'était fini ? 😂
+</p>
+
+<button onclick="document.getElementById('messageSecret').style.display='flex'"
+style="background:#9b6073;color:white;border:none;padding:15px 28px;border-radius:40px;font-size:15px;cursor:pointer;">
+J'ai encore quelque chose à vous dire… ♡
+</button>
+
+</section>
+
+<div id="messageSecret"
+style="display:none;position:fixed;inset:0;background:rgba(45,25,35,.8);z-index:10001;align-items:center;justify-content:center;padding:25px;">
+
+<div style="background:#fffaf8;max-width:600px;padding:45px 35px;border-radius:25px;text-align:center;position:relative;">
+
+<button onclick="document.getElementById('messageSecret').style.display='none'"
+style="position:absolute;right:15px;top:15px;border:none;background:#f6d6df;border-radius:50%;width:40px;height:40px;font-size:24px;color:#7d4356;">
+×
+</button>
+
+<div style="font-size:35px;color:#c87591;">♡</div>
+
+<h2 style="font-family:'Playfair Display',serif;color:#6d3f50;">
+Celia & Soraya
+</h2>
+
+<p style="color:#654d56;line-height:1.8;">
+Plus de 13 ans de nous trois.
+</p>
+
+<p style="color:#654d56;line-height:1.8;">
+Trois filles qui ont grandi ensemble,
+rigolé ensemble, dansé ensemble,
+fait des dossiers et créé tellement
+de souvenirs.
+</p>
+
+<p style="color:#654d56;line-height:1.8;">
+Quelle chance d'avoir grandi avec vous deux.
+Et même si la vie nous emmène parfois
+dans des directions différentes,
+j'espère qu'on créera encore des milliers
+de souvenirs ensemble. 😂
+</p>
+
+<p style="color:#8d5367;font-family:'Playfair Display',serif;font-size:20px;">
+Mes deux espaguettis, je vous aime fort. ♡
+<br><br>
+— Aïssatou
+</p>
+
+</div>
+</div>
+<div id="photoModal"
+style="display:none; position:fixed; inset:0; background:rgba(35,20,30,.88); z-index:10000; align-items:center; justify-content:center; padding:20px;"
+onclick="this.style.display='none'">
+
+<button
+onclick="event.stopPropagation(); document.getElementById('photoModal').style.display='none'"
+style="position:absolute; top:20px; right:20px; width:45px; height:45px; border:none; border-radius:50%; background:#f6d6df; color:#6d3f50; font-size:28px; cursor:pointer;">
+×
+</button>
+<button
+id="prevPhoto"
+onclick="event.stopPropagation(); changePhoto(-1)"
+style="position:absolute; left:20px; top:50%; transform:translateY(-50%); width:50px; height:50px; border:none; border-radius:50%; background:#f6d6df; color:#6d3f50; font-size:32px; cursor:pointer;">
+‹
+</button>
+
+<button
+id="nextPhoto"
+onclick="event.stopPropagation(); changePhoto(1)"
+style="position:absolute; right:20px; top:50%; transform:translateY(-50%); width:50px; height:50px; border:none; border-radius:50%; background:#f6d6df; color:#6d3f50; font-size:32px; cursor:pointer;">
+›
+</button>
+
+<img
+id="modalImage"
+src=""
+alt="Souvenir en grand"
+style="max-width:95vw; max-height:90vh; width:auto; height:auto; object-fit:contain; border-radius:18px; box-shadow:0 15px 50px rgba(0,0,0,.4);"
+onclick="event.stopPropagation();">
+
+</div>
+<script>
+const photos = [
+"photos/01.jpg",
+"photos/02.jpg",
+"photos/03.jpg",
+"photos/04.jpg",
+"photos/05.jpg",
+"photos/06.jpg",
+"photos/07.jpg",
+"photos/08.jpg",
+"photos/09.png",
+"photos/10.png"
+];
+
+let currentPhoto = 0;
+
+function openPhoto(src) {
+currentPhoto = photos.indexOf(src);
+if (currentPhoto === -1) currentPhoto = 0;
+
+document.getElementById("modalImage").src = photos[currentPhoto];
+document.getElementById("photoModal").style.display = "flex";
+}
+
+function changePhoto(direction) {
+currentPhoto += direction;
+
+if (currentPhoto < 0) {
+currentPhoto = photos.length - 1;
+}
+
+if (currentPhoto >= photos.length) {
+currentPhoto = 0;
+}
+
+document.getElementById("modalImage").src = photos[currentPhoto];
+}
+</script>
+
+</body>
+
+</html>
